@@ -1,0 +1,35 @@
+--create table if not exists carts (
+--id uuid primary key default uuid_generate_v4(),
+--created_at date not null,
+--updated_at date not null
+--)
+--
+--create table if not exists cart_items (
+--product_id uuid,
+--title text not null,
+--description text,
+--price integer,
+--cart_id uuid,
+--count integer,
+--foreign key ("cart_id") references "carts" ("id"))
+--
+--insert into carts (id, created_at, updated_at) values 
+--('6955f119-3cbc-4c71-93cc-140b6ff744c2','2022-10-18', '2022-10-19')
+--
+--insert into cart_items (product_id, cart_id, count, title, description, price) values 
+--('15f06880-58e7-11ed-8ec2-9f7399bd08a8', '6955f119-3cbc-4c71-93cc-140b6ff744c2', 2, 'Starbord Pro +', 'descr Starboard Pro +', 2150),
+--('15d7fe80-58e7-11ed-ab9a-673a73a15576', '6955f119-3cbc-4c71-93cc-140b6ff744c2', 3, 'Gladiator Custom', 'descr Custom', 2100),
+--('71e2ca30-58fa-11ed-9e21-1756b9738678', '6955f119-3cbc-4c71-93cc-140b6ff744c2', 4, 'Red Puddle', 'descr Red', 2700),
+--('71d3fd20-58fa-11ed-b517-c3bfd7c9eaad', '6955f119-3cbc-4c71-93cc-140b6ff744c2', 1, 'Gladiator Classic', 'descr Classic',1600)
+--
+--drop table carts
+--
+--drop table cart_items
+--
+--delete from carts
+--
+--delete from cart_items
+--
+--create extension if not exists "uuid-ossp";
+--
+--CREATE DATABASE evshipilo_cart_database
